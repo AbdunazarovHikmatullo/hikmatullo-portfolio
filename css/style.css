@@ -549,6 +549,87 @@ header .container{
 }
 
 /* ── Responsive ── */
+/* ── Footer ── */
+.footer{
+    background: #060606;
+    color: #ffffff;
+    padding: 80px 0 40px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-name{
+    font-size: clamp(64px, 12vw, 140px);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-nav{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: color 0.15s, background 0.15s;
+}
+
+.footer-nav a:hover{
+    color: #ffffff;
+    background: rgba(255,255,255,0.07);
+}
+
+.footer-socials{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-socials a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    color: rgba(255,255,255,0.45);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: color 0.2s, background 0.2s, border-color 0.2s;
+}
+
+.footer-socials a:hover{
+    color: #ffffff;
+    background: rgba(255,255,255,0.07);
+    border-color: rgba(255,255,255,0.18);
+}
+
+.footer-copy{
+    font-size: 13px;
+    color: rgba(255,255,255,0.25);
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    width: 100%;
+}
+
+/* ── Responsive ── */
 @media (max-width: 1024px){
     .projects-grid{ grid-template-columns: repeat(2, 1fr); }
 }
@@ -567,4 +648,7 @@ header .container{
     .projects{ padding: 80px 0 100px; }
     .projects-grid{ grid-template-columns: repeat(2, 1fr); gap: 12px; }
     .projects-heading{ margin-bottom: 40px; }
+
+    .footer{ padding: 60px 0 32px; }
+    .footer .container{ gap: 28px; }
 }
