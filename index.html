@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hikmatullo — Fullstack разработчик</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#home" class="logo">
+                <img src="./img/android-chrome-192x192.png" alt="logo">
+                <span>Hikmatullo</span>
+            </a>
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="nav-link active">Главная</a></li>
+                        <li><a href="#about" class="nav-link">Обо мне</a></li>
+                        <li><a href="#projects" class="nav-link">Проекты</a></li>
+                        <li><a href="#contact" class="nav-link">Контакт</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="menu-btn" aria-label="Меню">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="fullscreen-menu">
+        <button class="fullscreen-menu__close" aria-label="Закрыть">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="4" y1="4" x2="24" y2="24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="24" y1="4" x2="4" y2="24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#contact" class="nav-link">Контакт</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- ── Hero ── -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-label">Fullstack разработчик</p>
+                    <h1 class="hero-title">Привет, я<br><span>Hikmatullo</span></h1>
+                    <p class="hero-desc">Создаю современные веб-приложения с чистым кодом и продуманным дизайном.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-accent nav-link">Мои проекты</a>
+                        <a href="#contact" class="btn-ghost nav-link">Связаться →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── About ── -->
+        <section class="about" id="about">
+            <div class="about-bg"></div>
+            <div class="container">
+                <div class="about-inner">
+
+                    <div class="about-left">
+                        <p class="section-label">Обо мне</p>
+                        <h2 class="about-title">Простой парень из<br><span>Таджикистана</span></h2>
+                        <div class="about-text">
+                            <p>Люблю программировать, создавать сайты и веб-сервисы. Занимаюсь разработкой с 14 лет — начинал с чистого HTML, CSS и JS, постепенно расширяя знания до современных фреймворков и production-стека.</p>
+                            <p>Обладаю глубоким пониманием полного цикла разработки: от архитектуры до деплоя.</p>
+                        </div>
+
+                        <div class="about-stack">
+                            <div class="stack-group">
+                                <p class="stack-label">Сеть &amp; Протоколы</p>
+                                <div class="stack-tags">
+                                    <span>Linux</span>
+                                    <span>HTTP/HTTPS</span>
+                                    <span>TCP/UDP</span>
+                                    <span>gRPC</span>
+                                </div>
+                            </div>
+                            <div class="stack-group">
+                                <p class="stack-label">Базы данных</p>
+                                <div class="stack-tags">
+                                    <span>PostgreSQL</span>
+                                    <span>MongoDB</span>
+                                    <span>SQLite</span>
+                                    <span>Redis</span>
+                                    <span>RabbitMQ</span>
+                                </div>
+                            </div>
+                            <div class="stack-group">
+                                <p class="stack-label">Разработка</p>
+                                <div class="stack-tags">
+                                    <span class="tag-accent">Golang</span>
+                                    <span>Python</span>
+                                    <span>JavaScript</span>
+                                    <span>Docker</span>
+                                    <span>Docker Compose</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-right">
+                        <div class="about-card">
+                            <div class="about-card__icon">⚡</div>
+                            <h3>Golang — основной инструмент</h3>
+                            <p>Скорость и простота языка подкупают. В отличие от Python, Go создан для высокопроизводительных систем — то что надо.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-card__icon">🐳</div>
+                            <h3>Docker в каждом проекте</h3>
+                            <p>Контейнеризация — стандарт разработки. Docker и Docker Compose используются абсолютно во всех моих проектах.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-card__icon">🌐</div>
+                            <h3>От верстки до продакшна</h3>
+                            <p>Обширная база знаний о том, как создаются полноценные веб-сайты с нуля до деплоя на production-серверы.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Projects ── -->
+        <section class="projects" id="projects">
+            <div class="projects-bg"></div>
+            <div class="container">
+                <h2 class="projects-heading">Проекты</h2>
+                <div class="projects-grid">
+
+                    <a href="#" class="project-card">
+                        <div class="carousel-track">
+                            <div class="carousel-slide" style="background:#1a1a2e;"></div>
+                            <div class="carousel-slide" style="background:#16213e;"></div>
+                            <div class="carousel-slide" style="background:#0f3460;"></div>
+                            <div class="carousel-slide" style="background:#533483;"></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="project-card">
+                        <div class="carousel-track">
+                            <div class="carousel-slide" style="background:#0d1b2a;"></div>
+                            <div class="carousel-slide" style="background:#1b2838;"></div>
+                            <div class="carousel-slide" style="background:#2a475e;"></div>
+                            <div class="carousel-slide" style="background:#1b3a4b;"></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="project-card">
+                        <div class="carousel-track">
+                            <div class="carousel-slide" style="background:#0f1a0f;"></div>
+                            <div class="carousel-slide" style="background:#1a2e1a;"></div>
+                            <div class="carousel-slide" style="background:#2d4a2d;"></div>
+                            <div class="carousel-slide" style="background:#1f3b1f;"></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="project-card">
+                        <div class="carousel-track">
+                            <div class="carousel-slide" style="background:#2e1a0e;"></div>
+                            <div class="carousel-slide" style="background:#3d2314;"></div>
+                            <div class="carousel-slide" style="background:#5c3317;"></div>
+                            <div class="carousel-slide" style="background:#3b2010;"></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="project-card">
+                        <div class="carousel-track">
+                            <div class="carousel-slide" style="background:#1a0e2e;"></div>
+                            <div class="carousel-slide" style="background:#2a1a4e;"></div>
+                            <div class="carousel-slide" style="background:#3d2070;"></div>
+                            <div class="carousel-slide" style="background:#251545;"></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="project-card">
+                        <div class="carousel-track">
+                            <div class="carousel-slide" style="background:#0e1a1a;"></div>
+                            <div class="carousel-slide" style="background:#162b2b;"></div>
+                            <div class="carousel-slide" style="background:#1e3d3d;"></div>
+                            <div class="carousel-slide" style="background:#122525;"></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="project-card">
+                        <div class="carousel-track">
+                            <div class="carousel-slide" style="background:#1a1a0e;"></div>
+                            <div class="carousel-slide" style="background:#2b2b12;"></div>
+                            <div class="carousel-slide" style="background:#3d3d1a;"></div>
+                            <div class="carousel-slide" style="background:#252510;"></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="project-card">
+                        <div class="carousel-track">
+                            <div class="carousel-slide" style="background:#1a0e0e;"></div>
+                            <div class="carousel-slide" style="background:#2e1212;"></div>
+                            <div class="carousel-slide" style="background:#451a1a;"></div>
+                            <div class="carousel-slide" style="background:#351010;"></div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
